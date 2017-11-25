@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg4"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.forever.tour.ActivityInternal.ApiServiceActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/inContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/inTabs"
+            app:tabTextColor="#580f64"
+            app:tabMode="fixed"
+            android:background="#82cedf"
+            app:tabIndicatorHeight="2.5dp"
+            app:tabIndicatorColor="#8f335c"
+            android:layout_gravity="top"
+            app:tabPadding="2dp"
+            android:duplicateParentState="true"
+            app:tabSelectedTextColor="#7721a9"
+            app:tabMinWidth="64dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <!--add height and width to TabItem -->
+            <android.support.design.widget.TabItem
+                android:id="@+id/nearbyTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/placePickTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/forecastTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
